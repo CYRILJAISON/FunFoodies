@@ -1,0 +1,85 @@
+.RecommendedSection{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative , fixed;
+}
+.roll{
+    margin-bottom: -4px;
+    margin-top: 0px;
+    width: 10vh;
+    margin-left: 145vh;
+}
+.leaf{
+    width: 22vh;
+    margin-left: 46vh;
+    margin-top: -10vh;
+    margin-bottom: -3vh;
+}
+.maintext{
+    text-align: center;
+    font-size: 36px;
+    margin-top: -10vh;
+    margin-left: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-justify: left;
+    color: black;
+}
+.ul{
+    text-align: center;
+    padding: 1vh 10vh 3vh 10vh;
+}
+
+body {
+    background-color:  linear-gradient(180deg, #F7C115 0%, #EA5F00 139.34%);
+}
+
+.heading{
+    font-size:20px;
+    font-weight:600;
+    color:  linear-gradient(180deg, #F7C115 0%, #EA5F00 139.34%);
+
+}
+
+  .line1{
+    color:#000;
+    font-size:12px;
+
+  }
+   .line2{
+    color:#000;
+    font-size:12px;
+    
+  }
+   .line3{
+    color:#000;
+    font-size:12px;
+    
+  }
+
+  .cards{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: #F7C115;
+
+  }
+    
+
+
+.cards:hover{
+
+    box-shadow: 5px 6px 6px 2px  linear-gradient(180deg, #F7C115 0%, #EA5F00 139.34%);
+    transform: scale(1.1);
+}
+.chicken{
+    width: 100px;
+    height: 100px;
+    background-color: #F7C115;
+}
+.roasted{
+    width: 100px;
+    background-color: #F7C115;
+}
+
+
