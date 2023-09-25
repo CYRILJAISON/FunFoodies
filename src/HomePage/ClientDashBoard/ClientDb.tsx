@@ -124,7 +124,7 @@ function ClientDb() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Admin! Dashboard
+              Client! Dashboard
             </Typography>
             <Typography
             variant="h6"

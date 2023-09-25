@@ -124,7 +124,7 @@ function PartnerDb() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Admin! Dashboard
+              Partner! Dashboard
             </Typography>
             <Typography
             variant="h6"
@@ -178,7 +178,7 @@ function PartnerDb() {
             overflow: 'auto',
           }}
         >
-          <Toolbar />
+          <Toolbar />  
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
               {/* Chart */}
