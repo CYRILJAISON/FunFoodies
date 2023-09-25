@@ -8,10 +8,11 @@ import { Categories } from './components/Categories/Categories';
 import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import EmplyLogin from './components/EmployeeLoginIn/EmplyLogin';
-import Dashboard from './HomePage/DashBoard/DashBorad';
+import Dashboard from './HomePage/AdminDashBoard/DashBorad';
 import Login from './Login/Login';
+import ClientDb from './HomePage/ClientDashBoard/ClientDb';
 import Logout from './Logout/Logout';
-
+import PartnerDb from './HomePage/PartnerDashBoard/PartnerDb';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
         <Route path='/register' element= {<Register />} />
         <Route path='/dashboard' element= {<Dashboard />} />
         <Route path='/home' element= {<Logout />} />
+        <Route path='/clientdb' element= {<ClientDb />} />
+        <Route path='/partnerdb' element= {<PartnerDb />} />
       </Routes>
     </BrowserRouter>
     </div>
