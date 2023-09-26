@@ -7,7 +7,7 @@ const HomePage = () => {
     return(
         <>
             <MainSection />
-            <RecommendedSection />
+            {/* <RecommendedSection /> */}
             {/* <TopRatingSection />
             <ServiceSection />
             <CategorySection />

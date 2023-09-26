@@ -26,9 +26,9 @@ function Nav () {
       <div className={style.menu}>
         <NavItem title='Home' url='/home'/>
         <NavItem title='About Us' url='/aboutUs'/>
-        <NavItem title='Login' url='/login'/>
-        <NavItem title='Register' url='/register'/>
         <NavItem title='Contact Us' url='/contactUs'/>
+        <NavItem title='Register' url='/register'/>
+        <NavItem title='Login' url='/login'/>
       </div>
     </div>
    </div>

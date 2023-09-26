@@ -43,8 +43,8 @@ export default function SignUp() {
   };
 
   return (
-    <section className={`${'bg-warning'} ${style.reg} `}>
-    <div>
+    <section>
+    <div style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
         <Nav />
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">

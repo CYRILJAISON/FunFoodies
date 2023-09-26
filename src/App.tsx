@@ -13,6 +13,7 @@ import Login from './Login/Login';
 import ClientDb from './HomePage/ClientDashBoard/ClientDb';
 import Logout from './Logout/Logout';
 import PartnerDb from './HomePage/PartnerDashBoard/PartnerDb';
+import Forgot from './components/ForgotPassword/Forgot';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/home' element= {<Logout />} />
         <Route path='/clientdb' element= {<ClientDb />} />
         <Route path='/partnerdb' element= {<PartnerDb />} />
+        <Route path='/forgot' element= {<Forgot />} />
       </Routes>
     </BrowserRouter>
     </div>

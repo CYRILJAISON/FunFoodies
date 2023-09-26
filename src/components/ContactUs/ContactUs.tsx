@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav'
 
 export const ContactUs = () => {
   return (
-    <section className='bg-warning'>
+    <section style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
     <div> 
         <Nav />
         Hello
