@@ -6,15 +6,13 @@ export const About = () => {
   return (
     <div>
       <Nav />
-      <section style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
+      <video src="./videos/HomePage.mp4" autoPlay muted loop playsInline width="100%" height="HEIGHT_HERE"></video>
       <h2 className={style.text}>ABOUT FUN FOODIES</h2>
       <br />
-
       <ol>We are a dedicated team working for the satisfaction of our investors and customers</ol>
       <ol>We are equipped with highly talented employees to cater the needs of our customers and bring profit to the investment partners</ol>
       <ol>We are hardworking , smart thinking team using advanced technology to achieve the highest level </ol>
       <ol>Our goal is to provide the best food at affordable price with no compromise in QUALITY</ol>
-      <div>
         <span>
           <h1 className={style.heading}>EXECUTIVE TEAM AND BOARD MEMBERS</h1>
           <br />
@@ -26,8 +24,6 @@ export const About = () => {
           <br />
           <h3>MANAGER   :  Mrs. SUMAYA</h3>
         </span>
-      </div>
-    </section>
     </div>
   )
 }

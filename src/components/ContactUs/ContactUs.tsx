@@ -1,12 +1,13 @@
 import React from 'react'
 import Nav from '../Nav/Nav'
+import style from "../ContactUs/Contact.module.css"
 
 export const ContactUs = () => {
   return (
-    <section style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
-    <div> 
+    <section className={style.background}>
+      <div> 
         <Nav />
-        Hello
+        
     </div>
     </section>
   )

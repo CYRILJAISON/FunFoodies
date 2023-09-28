@@ -4,8 +4,7 @@ import style from './Nav.module.css';
  
 function Nav () {
   return (
-    <header>
-   <div className={style.bgcolor}>
+   <div>
     <div>
       <div className='row'>
         <div>
@@ -32,7 +31,7 @@ function Nav () {
       </div>
     </div>
    </div>
-   </header>
+   
   )
 }
 

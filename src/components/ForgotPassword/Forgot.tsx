@@ -10,6 +10,7 @@ import {
   Typography,
   Button,
 } from '@mui/material';
+import Nav from '../Nav/Nav';
 
 function Forgot() {
   const [mobileNumber, setMobileNumber] = useState('');
@@ -26,23 +27,26 @@ function Forgot() {
   };
 
   return (
+    <div style={{backgroundColor: '#ffcc00'}}>
+      <Nav />
     <div
       style={{
-        backgroundColor: '#ffcc00',
         width: '100%',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center',
+        marginTop:'13%'
       }}
     >
+      
+      
       <ThemeProvider theme={createTheme()}>
         <Container
           component="main"
           maxWidth="xs"
           style={{
-            backgroundColor: '#52b4d9',
+            backgroundColor: 'white',
             padding: '20px',
             borderRadius: '8px',
             boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)',
@@ -55,7 +59,7 @@ function Forgot() {
               flexDirection: 'column',
               alignItems: 'center',
               textAlign: 'center',
-              marginTop: '20px',
+              marginTop: '10px',
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}></Avatar>
@@ -168,6 +172,7 @@ function Forgot() {
         </Container>
       </ThemeProvider>
     </div>
+  </div>
   );
 }
 

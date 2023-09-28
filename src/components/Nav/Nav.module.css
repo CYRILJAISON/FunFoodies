@@ -3,15 +3,12 @@
     width: 100%;
     height: 100%;
 
-    border-bottom: 10px ;
+    
     display: flex;
     align-items: right;
     font-weight: bold;
     font-size: 120px;
-    text-align: right;
-    
 }
-
 .links-container{
     display: flex;
     width: 500px;
@@ -25,11 +22,6 @@
 .link{
     justify-content: space-between;
 
-}
-
-
-.bgcolor{
-    background: linear-gradient(180deg, #FFD243 0%, #FFB726 0.01%, #FF9D0A 100%);
 }
 .logo{
     position: relative;
