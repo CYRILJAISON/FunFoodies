@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   ThemeProvider,
   createTheme,
@@ -8,93 +10,160 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-import React, { useState } from 'react';
-import Nav from '../Nav/Nav';
-import style from './Forgot.module.css'
-import { blue } from '@mui/material/colors';
 
 function Forgot() {
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [otp, setOtp] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
   const [isOtpSent, setIsOtpSent] = useState(false);
+  const [otp, setOtp] = useState('');
 
-  const handleSendOtp = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    
-    // Ensure the phone number has exactly 10 digits
-    if (phoneNumber.length !== 10) {
-      alert('Phone number must be a 10-digit number.');
-      return;
-    }
-
-    // Send a request to your server to send an OTP to the provided phone number
-    // You can use a library like Axios for this.
-    // Once the OTP is sent, update state to show the OTP input field
+  const handleSendOTP = () => {
     setIsOtpSent(true);
   };
 
-  const handleVerifyOtp = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    // Send a request to your server to verify the OTP
-    // You can use a library like Axios for this.
-    // If the OTP is valid, you can allow the user to reset their password
-    // and navigate to the password reset page.
+  const handleOTPSubmit = () => {
+    console.log('OTP submitted:', otp);
+    setOtp('');
   };
 
   return (
-    <div style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
-      <Nav />
+    <div
+      style={{
+        backgroundColor: '#ffcc00',
+        width: '100%',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
       <ThemeProvider theme={createTheme()}>
-        <Container component="main" maxWidth="xs">
+        <Container
+          component="main"
+          maxWidth="xs"
+          style={{
+            backgroundColor: '#52b4d9',
+            padding: '20px',
+            borderRadius: '8px',
+            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <CssBaseline />
           <Box
             sx={{
-              marginTop: 8,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              textAlign: 'center',
+              marginTop: '20px',
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}></Avatar>
-            <Typography component="h1" variant="h4">
-              Reset
+            <Typography component="h1" variant="h5" style={{ marginBottom: '20px' }}>
+              Forgot Password
             </Typography>
-            <h2 className={style.forgot}>Forgot Password</h2>
+
             {!isOtpSent ? (
-              <form onSubmit={handleSendOtp}>
-                <label>Phone Number: </label>
-                <input
-                  className={style.number}
-                  type="numbers"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  pattern="{0-9}{10}"
-                  required
-                />
-                <br />
-                <Button 
-                className={style.otp}
-                type="submit" 
-                variant="contained" 
-                color="primary">
-                  Send OTP
-                </Button>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSendOTP();
+                }}
+              >
+                <div style={{ flexDirection: 'column', alignItems: 'center' }}>
+                  <label style={{ fontSize: '18px', marginBottom: '10px' }}>
+                    Enter Mobile Number:
+                  </label>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <input
+                      type="tel" // Use "tel" type for a numeric keyboard on mobile devices
+                      value={mobileNumber}
+                      onChange={(e) => {
+                        const inputValue = e.target.value.replace(/\D/g, '').substring(0, 10); // Allow only digits and limit to 10 characters
+                        setMobileNumber(inputValue);
+                      }}
+                      style={{
+                        marginRight: '10px',
+                        padding: '10px',
+                        borderRadius: '4px',
+                        border: '1px solid #ccc',
+                      }}
+                      min="0"
+                      max="9999999999"
+                      inputMode="numeric" // Prevent up and down arrows
+                    />
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      color="primary"
+                      size="large"
+                      style={{
+                        borderRadius: '4px',
+                        height: '48px',
+                      }}
+                    >
+                      Send OTP
+                    </Button>
+                  </div>
+                </div>
               </form>
             ) : (
-              <form onSubmit={handleVerifyOtp}>
-                <label className={style.forgot}>Enter OTP: </label>
-                <input
-                  type="text"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                  required
-                />
-                <br />
-                <Button className={style.verify} type="submit" variant="contained" color="primary">
-                  Verify OTP
-                </Button>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleOTPSubmit();
+                }}
+              >
+                <div style={{ flexDirection: 'column', alignItems: 'center' }}>
+                  <label style={{ fontSize: '18px', marginBottom: '10px' }}>Enter OTP:</label>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <input
+                      type="tel" // Use "tel" type for a numeric keyboard on mobile devices
+                      value={otp}
+                      onChange={(e) => {
+                        const inputValue = e.target.value.replace(/\D/g, '').substring(0, 10); // Allow only digits and limit to 10 characters
+                        setOtp(inputValue);
+                      }}
+                      style={{
+                        marginRight: '10px',
+                        padding: '10px',
+                        borderRadius: '4px',
+                        border: '1px solid #ccc',
+                      }}
+                      min="0"
+                      max="9999999999"
+                      inputMode="numeric" // Prevent up and down arrows
+                    />
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      color="primary"
+                      size="large"
+                      style={{
+                        borderRadius: '4px',
+                        height: '48px',
+                      }}
+                    >
+                      Verify OTP
+                    </Button>
+                  </div>
+                </div>
               </form>
             )}
+
+            <Link to="/login" style={{ textDecoration: 'none' }}>
+              <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                style={{
+                  marginTop: '10px',
+                  borderRadius: '4px',
+                }}
+              >
+                Cancel
+              </Button>
+            </Link>
           </Box>
         </Container>
       </ThemeProvider>
