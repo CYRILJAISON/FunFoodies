@@ -25,24 +25,20 @@ const MainSection = () => {
                 </h1>
                 <h1 className={style.subhead}>Homemade Delecious Food</h1>
                 <div className={style.simpletext}>
-                  <span>
-                    “Tell me what you eat, and I will tell you who you are.”
+                  <span className='text-light'>
+                    “PERFECT PLACE FOR THE BEST EXPERIENCE”
                     <br />
-                    “So long as you have food in your mouth you have
+                    “MILLIONS OF BENEFITS WHEN WE ARE TOGETHER"
                     <br />
-                    ssolved all questions for the time being.”
-                    <br />
-                    “There is no sincere love than the love of food.”
+                    “THERE IS NO SINCERE LOVE THAN THE LOVE OF FOOD”
                     <br />
                   </span>
                 </div>
               </div>
-              <div className={style.search}>
-                <input
-                  className={style.bar}
-                  type="text"
-                  placeholder="Search by food name"
-                />
+              <div>
+                <span className={`${style.search} ${'text-warning-emphasis'}`}>
+                  <h1>@ FUN! FOOODIES!</h1>
+                </span>
               </div>
             </div>
           </div>

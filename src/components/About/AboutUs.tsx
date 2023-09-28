@@ -14,6 +14,19 @@ export const About = () => {
       <ol>We are equipped with highly talented employees to cater the needs of our customers and bring profit to the investment partners</ol>
       <ol>We are hardworking , smart thinking team using advanced technology to achieve the highest level </ol>
       <ol>Our goal is to provide the best food at affordable price with no compromise in QUALITY</ol>
+      <div>
+        <span>
+          <h1 className={style.heading}>EXECUTIVE TEAM AND BOARD MEMBERS</h1>
+          <br />
+          <h3>FOUNDERS : Mr. KARTHIKEYAN & Mr. SELVAM</h3>
+          <br />
+          <h3>CEO : Ms. RAJATHILAGAM </h3>
+          <br />
+          <h3>ADMIN OFFICER : Mrs. YUVAMANI </h3>
+          <br />
+          <h3>MANAGER   :  Mrs. SUMAYA</h3>
+        </span>
+      </div>
     </section>
     </div>
   )

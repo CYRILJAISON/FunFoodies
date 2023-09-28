@@ -53,7 +53,7 @@ image{
 .simpletext{
     margin-left: 3.5rem;
     margin-top: 2rem;
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 100;
 }
 .search{
@@ -84,5 +84,8 @@ image{
     max-width: 450px;
     margin-left: 39rem;
     margin-top: 2%;
+    
+}
+.span{
     
 }
