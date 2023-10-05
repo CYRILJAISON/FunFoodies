@@ -1,5 +1,6 @@
 .navitem{
     list-style: none;
+    background: transparent;
 }
 
 .navitem a{

@@ -5,9 +5,9 @@ const MainSection = () => {
   return (
     <>
       <section className={style.mainsection}>
-        <div>
-        <Nav />
-          <video src="./videos/roast.mp4" autoPlay muted loop playsInline width="100%" height="HEIGHT_HERE"></video>
+        <div className={style.container}>
+          <video src="./videos/roast.mov" autoPlay muted loop playsInline width="100%" height="HEIGHT_HERE">
+          </video>
         </div>
       </section>
     </>

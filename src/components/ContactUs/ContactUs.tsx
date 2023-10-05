@@ -6,7 +6,7 @@ export const ContactUs = () => {
   return (
     <section className={style.background}>
       <div> 
-        <Nav />
+        
         
     </div>
     </section>

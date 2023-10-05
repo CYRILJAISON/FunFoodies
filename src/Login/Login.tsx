@@ -10,7 +10,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Nav from '../components/Nav/Nav';
+import style from './Login.module.css'
 
 function Login() {
   const [inputValue, setInputValue] = useState('');
@@ -44,20 +44,24 @@ function Login() {
   };
 
   return (
-    <div style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
-      <Nav />
+    <div className={style.backgroundImage} style={{ backgroundColor: '#ffcc00', width: '100%', minHeight: '100vh' }}>
       <ThemeProvider theme={createTheme()}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
           <Box
             sx={{
-              marginTop: 8,
+              marginBottom: 20,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}></Avatar>
+            <Avatar 
+              sx={{  
+                bgcolor: 'secondary.main', 
+                marginTop: 15
+                }}>
+            </Avatar>
             <Typography component="h1" variant="h5">
               Log In
             </Typography>
@@ -67,7 +71,7 @@ function Login() {
                 required
                 fullWidth
                 id="username"
-                label="Username"
+                label="Username" 
                 name="username"
                 autoComplete="username"
                 autoFocus
@@ -103,7 +107,7 @@ function Login() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/register" variant="body2">
+                  <Link href="/registerPage" variant="body2">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

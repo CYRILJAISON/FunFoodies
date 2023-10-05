@@ -1,91 +1,14 @@
-.mainsection{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.secondsection {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.glasstemp{
-    width: 80%;
-    height: 80%;
-    background: radial-gradient(100.28% 276.92% at 3.06% 7.15%, rgba(115, 113, 113, 0.42) 0%, rgba(217, 217, 217, 0.42) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    backdrop-filter: blur(35px);
-    border-radius: 30px;
+.text{
+    text-align: center;
+    margin-bottom: 100px;
 }
-.heading{
-    font-family: monospace;
-    font-size: 25px;
-    color: #FFFFFF;
-    line-height: 40px;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    font-weight: 300;
-}
-.subhead{
-    font-family: sail;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    color: #FFFFFF;
-    font-weight: 100;
-}
-
-.logo{
-    display: flex;
-    margin-left: 3rem;
-    margin-top: 3rem; 
-      
-}
-.plogo{
-    font-size: 25px;
-    margin-left: 1rem;
-    color: #FFAA2B;
-} 
-image{
-    max-width: 40px;
-}
-.simpletext{
-    margin-left: 3.5rem;
-    margin-top: 2rem;
-    color: #ffffff;
-    font-weight: 100;
-}
-.search{
-    display: flex;
-    margin-left: 3.5rem;
-    margin-top: 2rem;
-    /* background: linear-gradient(94.74deg, #FFAA2B 10.1%, #A34301 159.47%); */
-    color: #FFFFFF;
-}
-.bar{
-    background: linear-gradient(94.74deg, #FFAA2B 10.1%, #A34301 159.47%);
-    border-radius: 40px;
-    width: 60vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    justify-content: space-evenly;
-    text-align: left;
-    color: white;
-}
-::placeholder{
-    color:#FFFFFF;
-}
-.chicken{
-    justify-content: right;
-}
-.plateimage{
-    position: absolute;
-    display: flex;
-    max-width: 450px;
-    margin-left: 39rem;
-    margin-top: 2%;
-    
-}
-.span{
-    
+.fun{
+    font-family: 'Courier New', Courier, monospace;
 }

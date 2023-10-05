@@ -5,9 +5,9 @@ import style from '../About/About.module.css'
 export const About = () => {
   return (
     <div>
-      <Nav />
-      <video src="./videos/HomePage.mp4" autoPlay muted loop playsInline width="100%" height="HEIGHT_HERE"></video>
-      <h2 className={style.text}>ABOUT FUN FOODIES</h2>
+      
+      <video src="./videos/About.mov" autoPlay muted loop playsInline width="100%" height="HEIGHT_HERE"></video>
+      {/* <h2 className={style.text}>ABOUT FUN FOODIES</h2>
       <br />
       <ol>We are a dedicated team working for the satisfaction of our investors and customers</ol>
       <ol>We are equipped with highly talented employees to cater the needs of our customers and bring profit to the investment partners</ol>
@@ -23,7 +23,7 @@ export const About = () => {
           <h3>ADMIN OFFICER : Mrs. YUVAMANI </h3>
           <br />
           <h3>MANAGER   :  Mrs. SUMAYA</h3>
-        </span>
+        </span> */}
     </div>
   )
 }
